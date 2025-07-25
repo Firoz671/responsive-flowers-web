@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Shared Items */
+.flex{
+    display: flex;
+}
+.noto-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.inter-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.color-orange{
+    color: #E95A08;
+}
+.bg-orange{
+    background-color: #E95A08;
+}
+.dark-1{
+    color: rgba(0, 0, 0, 0.5);
+}
+/* All */
+body{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header{
+    margin-top: 30px;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu-container{
+    gap: 48px;
+    align-items: center;
+}
+.nav-menu{
+    gap: 48px;
+}
+.nav2{
+    
+}
+.nav-items{
+    list-style: none;
+}
+.nav-links{
+    color: #8987A1;
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+#home,#cart{
+    color: #252432;
+}
+.banner{
+    margin-top: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content{
+    max-width: 570px;
+}
+.banner-title{
+    font-size: 4rem;
+}
+.banner-description{
+    font-size: 22px;
+}
+.banner img{
+    max-width: 100%;
+}
+
+@media screen and (max-width:576px){
+    .nav-menu{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .navbar,.banner-content{
+        padding: 16px;
+    }
+}
