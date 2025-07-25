@@ -27,6 +27,11 @@
 }
 .dark-1{
     color: rgba(0, 0, 0, 0.5);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.card-black{
+    color: #111111;
 }
 /* All */
 body{
@@ -49,9 +54,7 @@ body{
 .nav-menu{
     gap: 48px;
 }
-.nav2{
-    
-}
+
 .nav-items{
     list-style: none;
 }
@@ -75,13 +78,62 @@ body{
 .banner-title{
     font-size: 4rem;
 }
-.banner-description{
-    font-size: 22px;
-}
+
 .banner img{
     max-width: 100%;
 }
 
+
+
+/* Main */
+/* cards */
+main{
+    margin-top: 110px;
+}
+.card-section-title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.card-section-description{
+    
+    text-align: center;
+    width: 888px;
+    margin: 0 auto;
+}
+.card{
+    margin-top: 49px;
+    width: 270px;
+    height: 485px;
+    text-align: center;
+}
+.card-title{
+    font-weight: 500;
+    font-size: 1.375rem;
+}
+.card-price{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1.375rem;
+}
+.card-btn{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+
+
+/* Responsive */
 @media screen and (max-width:576px){
     .nav-menu{
         display: none;
@@ -91,5 +143,18 @@ body{
     }
     .navbar,.banner-content{
         padding: 16px;
+    }
+    .card-section-description{
+        width: 100%;
+    }
+    .cards-container{
+        grid-template-columns: repeat(2,1fr);
+        margin: 14px;
+    }
+    .flower-lover-section{
+        flex-direction: column;
+    }
+    .label{
+        display: none;
     }
 }
