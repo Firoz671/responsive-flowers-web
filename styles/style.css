@@ -131,6 +131,44 @@ main{
     gap: 20px;
 }
 
+/* Flower Lover */
+.flower-lover-section {
+    align-items: center;
+    margin-top: 200px;
+    gap: 60px;
+    padding: 20px;
+}
+
+.flower-lover-img {
+  position: relative;
+  max-width: 100%;
+}
+
+.flower-lover-img1 {
+  filter: brightness(0.9);
+}
+.label {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 250px;
+  height: auto;
+}
+
+.flower-content{
+    width: 540px;
+    padding: 25px;
+}
+
+.flower-content-title {
+  font-size: 3.125rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.flower-content ul li{
+    line-height: 30px;
+    font-weight: 300;
+}
 
 
 /* Responsive */
@@ -153,6 +191,7 @@ main{
     }
     .flower-lover-section{
         flex-direction: column;
+
     }
     .label{
         display: none;
