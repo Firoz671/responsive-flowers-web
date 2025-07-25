@@ -1,85 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* Shared Items */
-.flex{
+.flex {
     display: flex;
 }
+
 .noto-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
+
 .inter-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
-.color-orange{
+
+.color-orange {
     color: #E95A08;
 }
-.bg-orange{
+
+.bg-orange {
     background-color: #E95A08;
 }
-.dark-1{
+
+.dark-1 {
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.25rem;
     font-weight: 400;
 }
-.card-black{
+
+.card-black {
     color: #111111;
 }
+
 /* All */
-body{
+body {
     max-width: 1140px;
     margin: 0 auto;
 }
 
 /* Header */
-.header{
+.header {
     margin-top: 30px;
 }
-.navbar{
+
+.navbar {
     justify-content: space-between;
     align-items: center;
 }
-.navbar-menu-container{
+
+.navbar-menu-container {
     gap: 48px;
     align-items: center;
 }
-.nav-menu{
+
+.nav-menu {
     gap: 48px;
 }
 
-.nav-items{
+.nav-items {
     list-style: none;
 }
-.nav-links{
+
+.nav-links {
     color: #8987A1;
     font-size: 1.15rem;
     font-weight: 500;
     text-decoration: none;
 }
-#home,#cart{
+
+#home,
+#cart {
     color: #252432;
 }
-.banner{
+
+.banner {
     margin-top: 120px;
     justify-content: space-between;
     align-items: center;
 }
-.banner-content{
+
+.banner-content {
     max-width: 570px;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
 }
 
-.banner img{
+.banner img {
     max-width: 100%;
 }
 
@@ -87,37 +104,43 @@ body{
 
 /* Main */
 /* cards */
-main{
+main {
     margin-top: 110px;
 }
-.card-section-title{
+
+.card-section-title {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 16px;
 }
-.card-section-description{
-    
+
+.card-section-description {
+
     text-align: center;
     width: 888px;
     margin: 0 auto;
 }
-.card{
+
+.card {
     margin-top: 49px;
     width: 270px;
     height: 485px;
     text-align: center;
 }
-.card-title{
+
+.card-title {
     font-weight: 500;
     font-size: 1.375rem;
 }
-.card-price{
+
+.card-price {
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: 600;
     font-size: 1.375rem;
 }
-.card-btn{
+
+.card-btn {
     font-size: 1rem;
     font-weight: 600;
     color: white;
@@ -125,9 +148,10 @@ main{
     height: 50px;
     border: none;
 }
-.cards-container{
+
+.cards-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -140,60 +164,170 @@ main{
 }
 
 .flower-lover-img {
-  position: relative;
-  max-width: 100%;
+    position: relative;
+    max-width: 100%;
 }
 
 .flower-lover-img1 {
-  filter: brightness(0.9);
-}
-.label {
-  position: absolute;
-  top: -100px;
-  right: -100px;
-  width: 250px;
-  height: auto;
+    filter: brightness(0.9);
 }
 
-.flower-content{
+.label {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 250px;
+    height: auto;
+}
+
+.flower-content {
     width: 540px;
     padding: 25px;
 }
 
 .flower-content-title {
-  font-size: 3.125rem;
-  font-weight: 600;
-  margin-bottom: 20px;
+    font-size: 3.125rem;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
-.flower-content ul li{
+
+.flower-content ul li {
     line-height: 30px;
     font-weight: 300;
 }
 
+/* Latest Deal */
+.latest-deal-section {
+    margin-top: 130px;
+}
+
+.latest-deal-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.deal-title {
+
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+
+.deal-description {
+    max-width: 888px;
+    margin-top: 16px;
+    font-size: 1.375rem;
+    font-weight: 300;
+}
+
+
+.latest-deal-items {
+    display: grid;
+    grid-template-areas:
+        "item-1 item-3"
+        "item-2 item-3";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.latest-deal-items>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.item-1 {
+    background-image: url("../assets/deal-bloom.png");
+    grid-area: item-1;
+    height: 200px;
+    filter: brightness(0.9);
+}
+
+.item-2 {
+    background-image: url("../assets/deal-ana.png");
+    grid-area: item-2;
+    height: 200px;
+    filter: brightness(0.9);
+}
+
+
+.item-3 {
+    background-image: url("../assets/deal-zabo.png");
+    grid-area: item-3;
+    height: 420px;
+    filter: brightness(0.9);
+}
+
+.latest-deal-items h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.latest-deal-items a {
+    color: white;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
 
 /* Responsive */
-@media screen and (max-width:576px){
-    .nav-menu{
+@media screen and (max-width:576px) {
+    .nav-menu {
         display: none;
     }
-    .banner{
+
+    .banner {
         flex-direction: column-reverse;
     }
-    .navbar,.banner-content{
+
+    .navbar,
+    .banner-content {
         padding: 16px;
     }
-    .card-section-description{
+
+    .card-section-description {
         width: 100%;
     }
-    .cards-container{
-        grid-template-columns: repeat(2,1fr);
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
         margin: 14px;
     }
-    .flower-lover-section{
+
+    .flower-lover-section {
         flex-direction: column;
 
     }
-    .label{
+
+    .label {
         display: none;
+    }
+
+    .latest-deal-items {
+        grid-template-areas:
+            "item-1"
+            "item-2"
+            "item-3";
+        grid-template-columns: 1fr;
+    }
+
+    .item-1,
+    .item-2,
+    .item-3 {
+        width: 100%;
+        height: auto;
+        min-height: 180px;
     }
 }
