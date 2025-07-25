@@ -42,7 +42,7 @@
 }
 
 /* All */
-body {
+.container {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -272,7 +272,6 @@ main {
 .latest-deal-items h3 {
     font-size: 20px;
     margin-bottom: 8px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .latest-deal-items a {
@@ -281,6 +280,41 @@ main {
     transition: background 0.3s ease;
 }
 
+/* Join Section */
+.join-section {
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: brightness(0.8);
+}
+
+.join-section h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#email {
+    width: 644px;
+    height: 50px;
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.join-section button {
+
+    width: 186px;
+    height: 50px;
+    margin-left: -5px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+}
 
 /* Responsive */
 @media screen and (max-width:576px) {
@@ -330,4 +364,37 @@ main {
         height: auto;
         min-height: 180px;
     }
+
+      .join-section {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .join-section h3 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .join-section form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #email {
+    width: 70%;
+    height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .join-section button {
+    width: 28%;
+    height: 45px;
+    margin-left: 2%;
+  }
+
+
+
 }
